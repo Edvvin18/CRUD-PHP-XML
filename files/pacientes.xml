@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<pacientes>
+  <paciente>
+    <id>1</id>
+    <nome>Edwin</nome>
+    <sobrenome>Banda</sobrenome>
+    <email>casemirobanda@gmail.com</email>
+    <endereco>Maputo</endereco>
+    <contacto>846725213</contacto>
+  <datan>2004-09-06</datan></paciente>
+  <paciente>
+    <id>2</id>
+    <nome>Leonel</nome>
+    <sobrenome>Messi</sobrenome>
+    <email>LeoM@gmail.com</email>
+    <endereco>Maputo</endereco>
+    <contacto>825471459</contacto>
+  <datan>1992-05-02</datan></paciente>
+  
+  
+</pacientes>
