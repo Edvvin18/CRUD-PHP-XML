@@ -12,19 +12,17 @@
     <h1 class="page-header text-center">Cadastro de pacientes</h1>
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span> Novo Cadastro</a>
+            <a href="#addnew" class="btn btn-primary" data-toggle="modal">
+                <span class="glyphicon glyphicon-plus"></span> Novo Cadastro
+            </a>
             <?php 
                 session_start();
-                if(isset($_SESSION['message'])){
-                    ?>
+                if(isset($_SESSION['message'])){?>
                     <div class="alert alert-info text-center" style="margin-top:20px;">
                         <?php echo $_SESSION['message']; ?>
                     </div>
                     <?php
-
-                    unset($_SESSION['message']);
-                }
-            ?>
+                    unset($_SESSION['message']);}?>
             <table class="table table-bordered table-striped" style="margin-top:20px;">
                 <thead>
                     <th>ID</th>
@@ -38,11 +36,8 @@
                 </thead>
                 <tbody>
                     <?php
-                    //load xml file
                     $file = simplexml_load_file('files/pacientes.xml');
-                    
-                    foreach($file->paciente as $row){
-                        ?>
+                    foreach($file->paciente as $row){?>
                         <tr>
                             <td><?php echo $row->id; ?></td>
                             <td><?php echo $row->nome; ?></td>
@@ -52,15 +47,17 @@
                             <td><?php echo $row->endereco; ?></td>
                             <td><?php echo $row->contacto; ?></td>
                             <td>
-                                <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Editar</a>
-                                <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Remover</a>
+                                <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Editar
+                                </a>
+                                <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-trash"></span> Remover
+                                </a>
                             </td>
                             <?php include('edit_delete_modal.php'); ?>
                         </tr>
                         <?php
-                    }
-        
-                    ?>
+                    }?>
                 </tbody>
             </table>
         </div>

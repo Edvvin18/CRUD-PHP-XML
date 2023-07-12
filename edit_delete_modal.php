@@ -1,5 +1,5 @@
-<!-- Edit -->
-<div class="modal fade" id="edit_<?php echo $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit_<?php echo $row->id; ?>"
+ tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -68,17 +68,19 @@
             </div> 
 			</div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                <button type="submit" name="edit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Atualizar</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                <button type="submit" name="edit" class="btn btn-success">
+					<span class="glyphicon glyphicon-check"></span> Atualizar</a>
 			</form>
             </div>
 
         </div>
     </div>
 </div>
-
 <!-- Delete -->
-<div class="modal fade" id="delete_<?php echo $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="delete_<?php echo $row->id; ?>" 
+tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -90,8 +92,10 @@
 				<h2 class="text-center"><?php echo $row->nome.' '.$row->sobrenome; ?></h2>
 			</div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                <a href="delete.php?id=<?php echo $row->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Sim</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+					<span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                <a href="delete.php?id=<?php echo $row->id; ?>" class="btn btn-danger">
+				<span class="glyphicon glyphicon-trash"></span> Sim</a>
             </div>
 
         </div>
