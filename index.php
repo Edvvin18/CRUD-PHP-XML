@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>CRUD XML PHP</title>
+    <link rel="website icon" href="images/website icon.png">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
